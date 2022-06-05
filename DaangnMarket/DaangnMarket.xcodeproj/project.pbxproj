@@ -13,6 +13,7 @@
 		1434AC422833FBD900B053E1 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434AC412833FBD900B053E1 /* ImageData.swift */; };
 		B81438DE2833BFBE004EA0D9 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81438DD2833BFBE004EA0D9 /* WritingViewController.swift */; };
 		B81438E02833ED4E004EA0D9 /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81438DF2833ED4E004EA0D9 /* CALayer+.swift */; };
+		B82924552868AA12002FC01C /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82924542868AA12002FC01C /* UIViewController+.swift */; };
 		B82B74202845D3E7005EB41E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B741F2845D3E7005EB41E /* APIConstants.swift */; };
 		B82B74222845DFAB005EB41E /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B74212845DFAB005EB41E /* APITarget.swift */; };
 		B82B74262845E144005EB41E /* HTTPHeaderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B74252845E144005EB41E /* HTTPHeaderField.swift */; };
@@ -66,6 +67,7 @@
 		1434AC412833FBD900B053E1 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		B81438DD2833BFBE004EA0D9 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
 		B81438DF2833ED4E004EA0D9 /* CALayer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+.swift"; sourceTree = "<group>"; };
+		B82924542868AA12002FC01C /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		B82B741F2845D3E7005EB41E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		B82B74212845DFAB005EB41E /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
 		B82B74252845E144005EB41E /* HTTPHeaderField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaderField.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				B85E9D0A2836622B00B81D36 /* NSMutableAttributedString+.swift */,
 				141CCD5D28361FC800689297 /* ImagePickerViewController+.swift */,
 				B8656A142849DE17004B8BEF /* UIImageView+.swift */,
+				B82924542868AA12002FC01C /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				1434AC422833FBD900B053E1 /* ImageData.swift in Sources */,
 				1434AC422833FBD900B053E1 /* ImageData.swift in Sources */,
 				B81438E02833ED4E004EA0D9 /* CALayer+.swift in Sources */,
+				B82924552868AA12002FC01C /* UIViewController+.swift in Sources */,
 				B8656A152849DE17004B8BEF /* UIImageView+.swift in Sources */,
 				B85E9D032835E77E00B81D36 /* SelectedImageCollectionViewCell.swift in Sources */,
 				B8656A042849B1AB004B8BEF /* APIService.swift in Sources */,
