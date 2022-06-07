@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PopUp" id="Y6W-OH-hqX" customClass="PopUpViewController" customModule="CustomViewSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHN-9B-9c3">
+                                <rect key="frame" x="107" y="398" width="200" height="100"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.71853898039999997" blue="0.718700805" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uHN-9B-9c3" secondAttribute="height" multiplier="2:1" id="DjL-aM-P7V"/>
+                                    <constraint firstAttribute="width" constant="200" id="xvo-Tw-bEb"/>
+                                </constraints>
+                                <color key="tintColor" red="0.1436594283" green="0.2604245543" blue="0.20016153880000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="팝업 버튼"/>
+                                <connections>
+                                    <action selector="popUpButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rzz-NN-XNr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uHN-9B-9c3" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Lpo-rQ-zdQ"/>
+                            <constraint firstItem="uHN-9B-9c3" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="PSE-GH-VGg"/>
+                            <constraint firstItem="uHN-9B-9c3" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.483092" id="afS-37-5s1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="129"/>
+        </scene>
+        <!--Custom Pop Up View Controller-->
+        <scene sceneID="T65-yE-pQb">
+            <objects>
+                <viewController storyboardIdentifier="CustomPopUpViewController" id="Uaq-RU-YP2" customClass="CustomPopUpViewController" customModule="CustomViewSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgq-nG-h0i" customClass="custom">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2a-Fg-0KT">
+                                <rect key="frame" x="43.5" y="322.5" width="327" height="251"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="ORV-hN-UIQ">
+                                        <rect key="frame" x="20" y="20" width="166.5" height="75"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="커스텀 뷰 세션" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DJ-a1-WIF">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="팝업을 만들어보겠습니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-kw-YTg">
+                                                <rect key="frame" x="0.0" y="54.5" width="166.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jfh-EA-BaM">
+                                        <rect key="frame" x="20" y="200" width="287" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dq-QD-g4k">
+                                                <rect key="frame" x="0.0" y="0.0" width="138.5" height="31"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="Uaq-RU-YP2" eventType="touchUpInside" id="GpT-4L-fvZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrp-C5-42l">
+                                                <rect key="frame" x="148.5" y="0.0" width="138.5" height="31"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.71853898039999997" blue="0.718700805" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="완료"/>
+                                                <connections>
+                                                    <action selector="okButtonTapped:" destination="Uaq-RU-YP2" eventType="touchUpInside" id="y5a-wJ-oVu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Jfh-EA-BaM" secondAttribute="trailing" constant="20" id="XTT-Vt-o33"/>
+                                    <constraint firstItem="ORV-hN-UIQ" firstAttribute="leading" secondItem="H2a-Fg-0KT" secondAttribute="leading" constant="20" id="euz-Ep-cDE"/>
+                                    <constraint firstItem="Jfh-EA-BaM" firstAttribute="leading" secondItem="H2a-Fg-0KT" secondAttribute="leading" constant="20" id="noN-Os-dUY"/>
+                                    <constraint firstAttribute="width" secondItem="H2a-Fg-0KT" secondAttribute="height" multiplier="327:251" id="vZA-eQ-qLF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jfh-EA-BaM" secondAttribute="bottom" constant="20" id="vgY-vN-TR9"/>
+                                    <constraint firstItem="ORV-hN-UIQ" firstAttribute="top" secondItem="H2a-Fg-0KT" secondAttribute="top" constant="20" id="xI2-sg-lGZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KKd-lv-V1D"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H2a-Fg-0KT" firstAttribute="centerX" secondItem="hgq-nG-h0i" secondAttribute="centerX" id="Kw8-90-VJi"/>
+                            <constraint firstItem="H2a-Fg-0KT" firstAttribute="width" secondItem="hgq-nG-h0i" secondAttribute="width" multiplier="0.789855" id="Xis-Sw-Mhn"/>
+                            <constraint firstItem="H2a-Fg-0KT" firstAttribute="centerY" secondItem="hgq-nG-h0i" secondAttribute="centerY" id="eMV-h0-maO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IS4-Ov-kMm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.50724637681162" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

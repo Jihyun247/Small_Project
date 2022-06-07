@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82924392860AF99002FC01C /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82924382860AF99002FC01C /* PopUpViewController.swift */; };
+		B829243B2860AFA0002FC01C /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B829243A2860AFA0002FC01C /* PopUp.storyboard */; };
+		B829243D2860B0E9002FC01C /* CustomPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829243C2860B0E9002FC01C /* CustomPopUpViewController.swift */; };
 		B8555EB7285E21C000D4AFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8555EB6285E21C000D4AFD6 /* AppDelegate.swift */; };
 		B8555EB9285E21C000D4AFD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8555EB8285E21C000D4AFD6 /* SceneDelegate.swift */; };
 		B8555EBB285E21C000D4AFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8555EBA285E21C000D4AFD6 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B82924382860AF99002FC01C /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		B829243A2860AFA0002FC01C /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
+		B829243C2860B0E9002FC01C /* CustomPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpViewController.swift; sourceTree = "<group>"; };
 		B8555EB3285E21C000D4AFD6 /* CustomViewSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8555EB6285E21C000D4AFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8555EB8285E21C000D4AFD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82924352860AF5D002FC01C /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				B82924362860AF75002FC01C /* Views */,
+				B82924382860AF99002FC01C /* PopUpViewController.swift */,
+				B829243A2860AFA0002FC01C /* PopUp.storyboard */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		B82924362860AF75002FC01C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B829243C2860B0E9002FC01C /* CustomPopUpViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B82924372860AF88002FC01C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B8555EBA285E21C000D4AFD6 /* ViewController.swift */,
+				B8555EBC285E21C000D4AFD6 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		B8555EAA285E21C000D4AFD6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +89,10 @@
 		B8555EB5285E21C000D4AFD6 /* CustomViewSession */ = {
 			isa = PBXGroup;
 			children = (
+				B82924372860AF88002FC01C /* Main */,
+				B82924352860AF5D002FC01C /* PopUp */,
 				B8555EB6285E21C000D4AFD6 /* AppDelegate.swift */,
 				B8555EB8285E21C000D4AFD6 /* SceneDelegate.swift */,
-				B8555EBA285E21C000D4AFD6 /* ViewController.swift */,
-				B8555EBC285E21C000D4AFD6 /* Main.storyboard */,
 				B8555EBF285E21C100D4AFD6 /* Assets.xcassets */,
 				B8555EC1285E21C100D4AFD6 /* LaunchScreen.storyboard */,
 				B8555EC4285E21C100D4AFD6 /* Info.plist */,
@@ -128,6 +161,7 @@
 				B8555EC3285E21C100D4AFD6 /* LaunchScreen.storyboard in Resources */,
 				B8555EC0285E21C100D4AFD6 /* Assets.xcassets in Resources */,
 				B8555EBE285E21C000D4AFD6 /* Main.storyboard in Resources */,
+				B829243B2860AFA0002FC01C /* PopUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +175,8 @@
 				B8555EBB285E21C000D4AFD6 /* ViewController.swift in Sources */,
 				B8555EB7285E21C000D4AFD6 /* AppDelegate.swift in Sources */,
 				B8555EB9285E21C000D4AFD6 /* SceneDelegate.swift in Sources */,
+				B82924392860AF99002FC01C /* PopUpViewController.swift in Sources */,
+				B829243D2860B0E9002FC01C /* CustomPopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
