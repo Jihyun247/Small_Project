@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bottom Sheet View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetViewController" id="Y6W-OH-hqX" customClass="BottomSheetViewController" customModule="CustomViewSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKk-G5-MBT">
+                                <rect key="frame" x="107" y="398" width="200" height="100"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.71853898039999997" blue="0.718700805" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fKk-G5-MBT" secondAttribute="height" multiplier="2:1" id="7PN-WD-JaZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="C9E-8P-rt3"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="바텀시트 버튼"/>
+                                <connections>
+                                    <action selector="bottomSheetButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JWI-M7-7iT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fKk-G5-MBT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="0mK-fG-4mW"/>
+                            <constraint firstItem="fKk-G5-MBT" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.483092" id="Ajo-MF-fYP"/>
+                            <constraint firstItem="fKk-G5-MBT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="p6d-uM-Nnd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="109"/>
+        </scene>
+        <!--Custom Bottom Sheet View Controller-->
+        <scene sceneID="0vh-x7-ij3">
+            <objects>
+                <viewController storyboardIdentifier="CustomBottomSheetViewController" id="l4g-t1-0ih" customClass="CustomBottomSheetViewController" customModule="CustomViewSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLG-0Z-m7O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5m-cu-JoZ">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바텀시트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9Z-QT-t8L">
+                                        <rect key="frame" x="167" y="20" width="80" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Pco-On-ZL6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgh-1d-95u">
+                                        <rect key="frame" x="20" y="20" width="49" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="l4g-t1-0ih" eventType="touchUpInside" id="4cA-BT-VBY"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.tip" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ADK-6z-8d9">
+                                        <rect key="frame" x="124" y="142" width="166" height="164"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ADK-6z-8d9" secondAttribute="height" id="Zw1-E6-4dh"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="m9Z-QT-t8L" firstAttribute="centerX" secondItem="S5m-cu-JoZ" secondAttribute="centerX" id="26F-xe-t8t"/>
+                                    <constraint firstItem="ADK-6z-8d9" firstAttribute="centerX" secondItem="S5m-cu-JoZ" secondAttribute="centerX" id="54J-6H-ISk"/>
+                                    <constraint firstItem="m9Z-QT-t8L" firstAttribute="top" secondItem="S5m-cu-JoZ" secondAttribute="top" constant="20" id="PqM-r1-hEO"/>
+                                    <constraint firstItem="ADK-6z-8d9" firstAttribute="width" secondItem="S5m-cu-JoZ" secondAttribute="width" multiplier="0.4" id="Rhb-kc-Kcb"/>
+                                    <constraint firstAttribute="height" constant="448" id="TsT-bm-Pm5"/>
+                                    <constraint firstItem="xgh-1d-95u" firstAttribute="top" secondItem="S5m-cu-JoZ" secondAttribute="top" constant="20" id="oPb-Mn-TtF"/>
+                                    <constraint firstItem="xgh-1d-95u" firstAttribute="leading" secondItem="S5m-cu-JoZ" secondAttribute="leading" constant="20" id="rd3-6P-sDc"/>
+                                    <constraint firstItem="ADK-6z-8d9" firstAttribute="centerY" secondItem="S5m-cu-JoZ" secondAttribute="centerY" id="zmy-ox-P1N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jwz-Di-7SQ"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S5m-cu-JoZ" firstAttribute="leading" secondItem="jwz-Di-7SQ" secondAttribute="leading" id="0pk-RU-Z7A"/>
+                            <constraint firstAttribute="bottom" secondItem="S5m-cu-JoZ" secondAttribute="bottom" id="1u5-BN-VoD"/>
+                            <constraint firstItem="S5m-cu-JoZ" firstAttribute="trailing" secondItem="jwz-Di-7SQ" secondAttribute="trailing" id="jE0-Zu-81k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomSheetHeight" destination="TsT-bm-Pm5" id="ryB-iS-Vr9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcJ-cB-PT1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.98550724637687" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil.tip" catalog="system" width="99" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
