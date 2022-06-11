@@ -26,7 +26,7 @@ extension APIService {
     }
     
     func requestGetItem(completion: @escaping (NetworkResult<[getItemModel]>) -> (Void)) {
-        print(#function)
+
         let target = APITarget.getItem
         AF.request(target)
             .responseData { dataResponse in
