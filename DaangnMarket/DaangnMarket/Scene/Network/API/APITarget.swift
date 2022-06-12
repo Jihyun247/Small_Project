@@ -5,7 +5,6 @@
 //  Created by 김지현 on 2022/05/31.
 //
 
-import Foundation
 import Alamofire
 import UIKit
 
