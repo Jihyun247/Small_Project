@@ -355,20 +355,20 @@ extension WritingViewController {
     func postItem() {
 
         APIService.shared.requestPostItem(title: titleTextView.text!, price: price ?? 0, contents: contentTextView.text!, images: selectedImage, completion: { result in
-            print(result)
-            switch result {
-            case .success(let response):
-                print(response)
+            
+            let responseResult = NetworkResultFactory.makeResult(resultType: result)
+            responseResult.resultMethod()
+
+            if responseResult is Success<postItemModel> {
+                
                 self.dismiss(animated: true, completion: nil)
-            case .requestErr(_):
-                print("리퀘스트 에러")
-            case .networkFail:
-                print("네트워크 통신 실패 alert")
-            case .serverErr:
-                print("서버에러")
-            case .pathErr:
-                print("에러")
+                
+            } else if responseResult is NetworkFail {
+                
+                // 네트워크 연결 실패 팝업 창 등등 UI 처리
             }
         })
     }
 }
+
+
