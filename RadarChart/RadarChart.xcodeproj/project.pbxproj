@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8072142286B37BC00C43FB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8072141286B37BC00C43FB0 /* AppDelegate.swift */; };
+		B8072144286B37BC00C43FB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8072143286B37BC00C43FB0 /* SceneDelegate.swift */; };
+		B8072146286B37BC00C43FB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8072145286B37BC00C43FB0 /* ViewController.swift */; };
+		B8072149286B37BC00C43FB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8072147286B37BC00C43FB0 /* Main.storyboard */; };
+		B807214B286B37BC00C43FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B807214A286B37BC00C43FB0 /* Assets.xcassets */; };
+		B807214E286B37BC00C43FB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B807214C286B37BC00C43FB0 /* LaunchScreen.storyboard */; };
+		B8072159286B5E2800C43FB0 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = B8072158286B5E2800C43FB0 /* Charts */; };
+		B807215E286BFEAC00C43FB0 /* RadarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B807215D286BFEAC00C43FB0 /* RadarChartViewController.swift */; };
+		B8072160286BFEBA00C43FB0 /* RadarChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B807215F286BFEBA00C43FB0 /* RadarChart.storyboard */; };
+		B8072163286C0A4000C43FB0 /* PolygonDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8072162286C0A4000C43FB0 /* PolygonDrawViewController.swift */; };
+		B8072165286C0A5000C43FB0 /* PolygonDrawViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8072164286C0A5000C43FB0 /* PolygonDrawViewController.storyboard */; };
+		B8072167286C0AB700C43FB0 /* UIBezierPath+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8072166286C0AB700C43FB0 /* UIBezierPath+.swift */; };
+		B807216B286C17D200C43FB0 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B807216A286C17D200C43FB0 /* DemoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B807213E286B37BC00C43FB0 /* RadarChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadarChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8072141286B37BC00C43FB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8072143286B37BC00C43FB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B8072145286B37BC00C43FB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8072148286B37BC00C43FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B807214A286B37BC00C43FB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B807214D286B37BC00C43FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B807214F286B37BC00C43FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B807215D286BFEAC00C43FB0 /* RadarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarChartViewController.swift; sourceTree = "<group>"; };
+		B807215F286BFEBA00C43FB0 /* RadarChart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RadarChart.storyboard; sourceTree = "<group>"; };
+		B8072162286C0A4000C43FB0 /* PolygonDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonDrawViewController.swift; sourceTree = "<group>"; };
+		B8072164286C0A5000C43FB0 /* PolygonDrawViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PolygonDrawViewController.storyboard; sourceTree = "<group>"; };
+		B8072166286C0AB700C43FB0 /* UIBezierPath+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+.swift"; sourceTree = "<group>"; };
+		B807216A286C17D200C43FB0 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B807213B286B37BC00C43FB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8072159286B5E2800C43FB0 /* Charts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8072135286B37BC00C43FB0 = {
+			isa = PBXGroup;
+			children = (
+				B8072140286B37BC00C43FB0 /* RadarChart */,
+				B807213F286B37BC00C43FB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B807213F286B37BC00C43FB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B807213E286B37BC00C43FB0 /* RadarChart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8072140286B37BC00C43FB0 /* RadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				B8072156286B387300C43FB0 /* Library */,
+				B8072155286B386500C43FB0 /* Draw */,
+				B807215C286BFE8300C43FB0 /* Resources */,
+				B807215B286BFE6A00C43FB0 /* Supporting Files */,
+				B807214F286B37BC00C43FB0 /* Info.plist */,
+			);
+			path = RadarChart;
+			sourceTree = "<group>";
+		};
+		B8072155286B386500C43FB0 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				B8072162286C0A4000C43FB0 /* PolygonDrawViewController.swift */,
+				B8072164286C0A5000C43FB0 /* PolygonDrawViewController.storyboard */,
+				B8072166286C0AB700C43FB0 /* UIBezierPath+.swift */,
+				B807216A286C17D200C43FB0 /* DemoView.swift */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		B8072156286B387300C43FB0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B807215D286BFEAC00C43FB0 /* RadarChartViewController.swift */,
+				B807215F286BFEBA00C43FB0 /* RadarChart.storyboard */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B807215B286BFE6A00C43FB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8072141286B37BC00C43FB0 /* AppDelegate.swift */,
+				B8072143286B37BC00C43FB0 /* SceneDelegate.swift */,
+				B8072145286B37BC00C43FB0 /* ViewController.swift */,
+				B8072147286B37BC00C43FB0 /* Main.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B807215C286BFE8300C43FB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B807214A286B37BC00C43FB0 /* Assets.xcassets */,
+				B807214C286B37BC00C43FB0 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B807213D286B37BC00C43FB0 /* RadarChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8072152286B37BC00C43FB0 /* Build configuration list for PBXNativeTarget "RadarChart" */;
+			buildPhases = (
+				B807213A286B37BC00C43FB0 /* Sources */,
+				B807213B286B37BC00C43FB0 /* Frameworks */,
+				B807213C286B37BC00C43FB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadarChart;
+			packageProductDependencies = (
+				B8072158286B5E2800C43FB0 /* Charts */,
+			);
+			productName = RadarChart;
+			productReference = B807213E286B37BC00C43FB0 /* RadarChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8072136286B37BC00C43FB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B807213D286B37BC00C43FB0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = B8072139286B37BC00C43FB0 /* Build configuration list for PBXProject "RadarChart" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8072135286B37BC00C43FB0;
+			packageReferences = (
+				B8072157286B5E2800C43FB0 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = B807213F286B37BC00C43FB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B807213D286B37BC00C43FB0 /* RadarChart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B807213C286B37BC00C43FB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8072160286BFEBA00C43FB0 /* RadarChart.storyboard in Resources */,
+				B807214E286B37BC00C43FB0 /* LaunchScreen.storyboard in Resources */,
+				B807214B286B37BC00C43FB0 /* Assets.xcassets in Resources */,
+				B8072165286C0A5000C43FB0 /* PolygonDrawViewController.storyboard in Resources */,
+				B8072149286B37BC00C43FB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B807213A286B37BC00C43FB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B807215E286BFEAC00C43FB0 /* RadarChartViewController.swift in Sources */,
+				B8072146286B37BC00C43FB0 /* ViewController.swift in Sources */,
+				B8072142286B37BC00C43FB0 /* AppDelegate.swift in Sources */,
+				B8072144286B37BC00C43FB0 /* SceneDelegate.swift in Sources */,
+				B8072163286C0A4000C43FB0 /* PolygonDrawViewController.swift in Sources */,
+				B8072167286C0AB700C43FB0 /* UIBezierPath+.swift in Sources */,
+				B807216B286C17D200C43FB0 /* DemoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B8072147286B37BC00C43FB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8072148286B37BC00C43FB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B807214C286B37BC00C43FB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B807214D286B37BC00C43FB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8072150286B37BC00C43FB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8072151286B37BC00C43FB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8072153286B37BC00C43FB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B849TJY5N4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RadarChart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyeon.RadarChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8072154286B37BC00C43FB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B849TJY5N4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RadarChart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyeon.RadarChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8072139286B37BC00C43FB0 /* Build configuration list for PBXProject "RadarChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8072150286B37BC00C43FB0 /* Debug */,
+				B8072151286B37BC00C43FB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8072152286B37BC00C43FB0 /* Build configuration list for PBXNativeTarget "RadarChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8072153286B37BC00C43FB0 /* Debug */,
+				B8072154286B37BC00C43FB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8072157286B5E2800C43FB0 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8072158286B5E2800C43FB0 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8072157286B5E2800C43FB0 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B8072136286B37BC00C43FB0 /* Project object */;
+}
