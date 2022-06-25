@@ -21,16 +21,22 @@ class DemoView: UIView {
             CGPoint(x: centerX + 95, y: 350)
         ]
         
-//        let paths: [CGPoint] = [
-//            CGPoint(x: centerX - 100, y: 400),
-//            CGPoint(x: centerX - 100, y: 500),
-//            CGPoint(x: centerX + 100, y: 500),
-//            CGPoint(x: centerX + 100, y: 400)
-//        ]
+        let graphPaths: [CGPoint] = [
+            CGPoint(x: centerX, y: 350),
+            CGPoint(x: centerX - 55, y: 350),
+            CGPoint(x: centerX - 50, y: 450),
+            CGPoint(x: centerX + 50, y: 450),
+            CGPoint(x: centerX + 55, y: 350)
+        ]
         
-        //let polygonPath = UIBezierPath.chaikinPath(paths)
-        let polygonPath = UIBezierPath.roundedCornersPath(paths, 30)
-        UIColor.orange.setFill()
+        makePolygonPath(paths: paths, radius: 30, color: .orange)
+        makePolygonPath(paths: graphPaths, radius: 30, color: .purple)
+    }
+    
+    private func makePolygonPath(paths: [CGPoint], radius: CGFloat, color: UIColor) {
+        
+        let polygonPath = UIBezierPath.roundedCornersPath(paths, radius)
+        color.setFill()
         polygonPath?.fill()
     }
 }
